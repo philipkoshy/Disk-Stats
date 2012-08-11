@@ -1,7 +1,10 @@
 Disk-Stats
 ==========
 
-This program reads disk statistics from /proc/diskstats
+This program reads disk statistics from
+
+	/proc/diskstats
+
 For more information, see the kernel documentation here:
 
 http://www.kernel.org/doc/Documentation/iostats.txt
