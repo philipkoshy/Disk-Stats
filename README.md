@@ -9,6 +9,12 @@ For more information, see the kernel documentation here:
 
 http://www.kernel.org/doc/Documentation/iostats.txt
 
+Dependencies
+============
+
+This code was tested using Ubuntu 12.04 64-bit Desktop Edition
+
+	sudo apt-get install g++ libboost-all-dev
 
 Compilation
 ===========
