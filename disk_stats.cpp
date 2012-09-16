@@ -22,8 +22,8 @@ string findLine(ifstream& fin, const string& targetString)
 
 	while(!fin.eof())
 	{
-		getline( fin, line );
-		if( line.find( targetString ) != string::npos )
+		getline(fin,line);
+		if(line.find(targetString) != string::npos)
 			return line;
 	}
 }
@@ -36,10 +36,9 @@ int main()
 	string line = findLine( fin, "sda1" );
 	
 	vector<string> fields;
-	split( fields, line, is_any_of("\t ") );
+	split(fields, line, is_any_of("\t "));
 
-
-	vector<string>::iterator end = find( fields.begin(), fields.end(), "sda1");
+	vector<string>::iterator end = find(fields.begin(), fields.end(), "sda1");
 	fields.erase(fields.begin(), ++end);
 	
 	cout << "[1] Reads Completed: " << fields[0]	<< endl;
